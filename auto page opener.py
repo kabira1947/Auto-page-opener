@@ -1,18 +1,10 @@
-num = int(input("please enter a number = "))
-for i in range(1,num+1):
-    for j in range(1,i+1):
-        print(j, end="")
-    print()
+import webbrowser
+import time
+import random
 
-
-n = int(input("please enter a number = "))
-for i in range(1,n+1):
-    for j in range(1,i+1):6
-        print(i, end="")
-    print()
-
-n1 = int(input("please enter a number = "))
-for i in range(1,n1):
-    for j in range(1,i+1):
-        print(i, end="")
-    print()
+while True:
+    sites= random.choice(['google.co.in','weforyourlife.xyz','facebook.com','youtube.com'])
+    visit ="http://{}".format(sites)
+    webbrowser.open(visit)
+    seconds=random.randrange(5,30)
+    time.sleep(seconds)
